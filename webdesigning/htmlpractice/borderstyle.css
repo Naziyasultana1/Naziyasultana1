@@ -1,0 +1,9 @@
+div{
+    margin:5px;
+    border:1px solid chartreuse;
+    padding:20px;
+    width:700px;
+    background-color: chartreuse;
+    color:brown;
+    border-radius: 20px;
+}
