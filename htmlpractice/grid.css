@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+.row:before{
+    background-color: olive;
+}
+.col{
+    float:left;
+    padding:10%;
+    background-color: blue;
+    width:50%;
+    height:300px;
+}
+
+.row2:before{
+    background-color: brown;
+
+}
+.col1{
+    display:inline;
+    float:left;
+    padding:1%;
+    width:33%;
+    height:300px;
+}
+.row3{
+    background-color: aquamarine;
+}
+.column2{
+    float:left;
+    height:400px;
+    width:25%;
+    padding:10px;
+}
+.cardrow::before
+{
+    background-color: blue;
+}
+.colcard
+{
+ float: left;
+ padding:0  10px;
+ width:25%    
+}
+.cardrow
+{
+ margin:0px -5px;
+}
+.card{
+    position:relative;
+    bottom:10px;
+    margin:2px;
+    box-shadow: 0 10px 15px 0 rgba(0 0 0 0.2);
+    padding:16px;
+
+}

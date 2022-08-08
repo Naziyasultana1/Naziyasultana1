@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <style>
+        h6{  /* TAG SELECTOR*/
+            font-size: 30px;
+            color:brown;
+        }
+     .classname /* CLASS SELECTOR*/
+        {
+            background-color: blueviolet;
+
+        }
+        #idname /* ID SELECTOR*/
+        {
+            color:chartreuse;
+        }
+        span,section{  /*group selector*/
+            font-style: italic;
+        }
+        section:nth-child(1) /*Nth child*/
+        {
+            font-size: 50px;
+        }
+        /* COMBINATORS ADJACENT,SIBLINGS,CHILD*/
+        span>p{  /*all elements after opening tag of selector*/
+            background-color: brown;
+        }
+        div+p{  /* only one element after closed tag of selector*/
+            background-color: chocolate;
+        }
+        p+span{/* all element after closed tag of selector*/
+            color:aqua;
+        }
+        /*ATTRIBUTE SELECTOR*/
+        input[type]{
+            color:darkgreen;
+        }
+        input[value]
+        {
+            background-color: blue;
+            color: brown;
+        }
+        /* style applies for every class values*/
+        [class*=test]
+        {
+         color:darkmagenta
+        }
+        /* style applies for only ending attribute value*/
+        [class$=test]
+        {
+            background-color: aqua;
+        }
+        [class^=test]/* style apply for only starting attribute*/
+        {
+            background-color: hotpink;
+        }
+
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors
+    </title>
+</head>
+<body>
+    <h6>selectors</h6>
+    <div class="classname"> this is 1st div
+        <p>para 1</p>
+        <p> para2</p>
+        <p> para3</p>
+        <span class="classname1">
+            <p>span para 1</p>
+            <p> span para 2</p>
+            <p>span para 3</p>
+        </span>
+        <p> para outside span</p>
+    </div>
+    <div>  this is 2nd div
+        <section> this is section
+            <p class="test is done">1st para of section</p>
+            <p class="is test done">2nd para of section </p>
+            <p class="done test">3rd para of section</p>
+        </section>
+    </div>
+    <p>para 1 outside div</p>
+    <p>para 2 outside div</p>
+    <span id="idname">
+        <p>span para 1</p>
+        <p> span para 2</p>
+        <p>span para 3</p>
+    </span>
+    <h1> this is for attribute selector</h1>
+    <label> enter name</label>
+    <input type="text">
+    <input type="submit" value="colorfullsubmit">
+    
+    
+</body>
+</html>
